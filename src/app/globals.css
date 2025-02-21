@@ -1,21 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #F5F5DC;
+  --title: #8B5A2B;
+  --text: #A67B5B; 
+  --mute-text: #D2B48C;
+  --button: #5FAC1C;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    
   }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend", sans-serif;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Lexend', sans-serif;
+  height: 2000vh;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 600;
+  font-size: 18px;
+  transition: all ease-in-out 0.3s;
+}
+
+a:hover{
+  color: var(--button);
+}
+a {
+  position: relative;
+}
+
+a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--button);
+  transition: width 0.3s ease;
+}
+
+a:hover::before {
+  width: 100%;
+}
+
+a.btn{
+  background: var(--text);
+  color: var(--background);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all ease-in-out 0.3s;
+}
+
+a.btn:hover{
+  background: var(--button);
+  border: none;
+}
+
+a.btn:hover::before {
+  display: none;
+}
+
+a.active {
+  color: var(--button);
+}
+
+a.active::before {
+  color: var(--button);
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--title);
+  font-weight: 600;
+}
+
+p {
+  color: var(--text);
+}
+
+hr {
+  border: 1px solid var(--text);
+}
+
+header {
+  background: var(--background);
+  z-index: 1000;
+}
+
+main .banner {
+  margin-top: 50px;
+}
+
+main .banner h1 {
+  text-transform: uppercase;
+}
+
+#cardcuidados .icon{
+  background-color: var(--text);
+  color: var(--background);
 }
