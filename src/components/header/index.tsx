@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+
 import Link from "next/link";
 
 export function Header() {
@@ -16,6 +19,7 @@ export function Header() {
                 </ul>
                 <Link href="" className="btn">Fale comigo!</Link>
             </div>
+            <button className="btn menu w-16"><FontAwesomeIcon icon={faBars} className="" /></button>
         </nav>
     </header>
  )

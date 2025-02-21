@@ -8,7 +8,7 @@ interface CardcuidadosProps {
 
 export function Cardcuidados({ icon, title, text }: CardcuidadosProps) {
  return (
-    <div id='cardcuidados' className="flex items-center justify-center border-red-400">
+    <div id='cardcuidados' className="flex items-center justify-start border-red-400 ">
         <div className="icon rounded-3xl p-4 mr-3">
             <span>{icon}</span>
         </div>

@@ -62,7 +62,7 @@ a:hover::before {
   width: 100%;
 }
 
-a.btn{
+.btn{
   background: var(--text);
   color: var(--background);
   padding: 0.5rem 1rem;
@@ -71,12 +71,12 @@ a.btn{
   transition: all ease-in-out 0.3s;
 }
 
-a.btn:hover{
+.btn:hover{
   background: var(--button);
   border: none;
 }
 
-a.btn:hover::before {
+.btn:hover::before {
   display: none;
 }
 
@@ -110,6 +110,10 @@ header {
   z-index: 1000;
 }
 
+header .menu {
+  display: none;
+}
+
 main .banner {
   margin-top: 50px;
 }
@@ -121,4 +125,14 @@ main .banner h1 {
 #cardcuidados .icon{
   background-color: var(--text);
   color: var(--background);
+}
+
+@media (max-width: 785px) {
+  header .navlinks {
+    display: none;
+  }
+
+  header .menu {
+    display: block;
+  }
 }
