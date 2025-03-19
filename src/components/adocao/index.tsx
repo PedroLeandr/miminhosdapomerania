@@ -10,10 +10,7 @@ const Adoção: React.FC = () => {
             Adoção responsável: visite-nos, escolha um amigo e assine o contrato de adoção. Vamos ajudar a
             encontrar o cão ideal para sua família.
           </p>
-          <Link
-            href="#contato"
-            className="mt-6 inline-block bg-yellow-500 text-white py-3 px-6 rounded-lg hover:bg-yellow-400 transition-colors"
-          >
+          <Link href="#contato" className="mt-6 inline-block bg-yellow-500 text-white py-3 px-6 rounded-lg hover:bg-yellow-400 transition-colors">
             Entrar em Contato
           </Link>
         </div>
